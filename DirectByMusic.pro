@@ -80,3 +80,7 @@ else:unix: LIBS += -L$$PWD/../rtaudio/.libs/ -lrtaudio
 
 INCLUDEPATH += $$PWD/../rtaudio
 DEPENDPATH += $$PWD/../rtaudio
+
+DISTFILES += \
+    qml/common/SceneBase.qml \
+    qml/scenes/MenuScene.qml
