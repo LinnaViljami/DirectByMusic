@@ -83,4 +83,5 @@ DEPENDPATH += $$PWD/../rtaudio
 
 DISTFILES += \
     qml/common/SceneBase.qml \
-    qml/scenes/MenuScene.qml
+    qml/scenes/MenuScene.qml \
+    qml/scenes/GameScene.qml
