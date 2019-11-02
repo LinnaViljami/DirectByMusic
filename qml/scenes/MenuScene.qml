@@ -9,7 +9,7 @@ SceneBase {
   // background
   Rectangle {
     anchors.fill: parent.gameWindowAnchorItem
-    color: "#47688e"
+    color: "#47588e"
   }
 
   // the "logo"
@@ -20,4 +20,18 @@ SceneBase {
     color: "#e9e9e9"
     text: "MultiSceneMultiLevel"
   }
+
+  signal playGamePressed
+
+  onPlayGamePressed: gameWindow.state = "game"
+ //...
+
+// menu
+    Column {
+        anchors.centerIn: parent
+        MenuButton {
+            text: "Play"
+            onClicked: playGamePressed()
+        }
+    }
 }

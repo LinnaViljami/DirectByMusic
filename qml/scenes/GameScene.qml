@@ -10,4 +10,19 @@ SceneBase {
     anchors.fill: parent.gameWindowAnchorItem
     color: "#dd94da"
   }
+
+  Column {
+      MenuButton {
+        text: "Back"
+        anchors.right: gameScene.gameWindowAnchorItem.right
+        anchors.rightMargin: 10
+        anchors.top: gameScene.gameWindowAnchorItem.top
+        anchors.topMargin: 10
+        onClicked: backButtonPressed()
+      }
+
+  }
+
+
+  onBackButtonPressed: gameWindow.state = "menu"
 }
